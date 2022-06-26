@@ -7,3 +7,7 @@ class Activation_ReLu:
         self.output = f(inputs)
 
 
+    def derivative(self,inputs):
+        f =  lambda x : (x > 0) * 1
+        return f(inputs)
+
